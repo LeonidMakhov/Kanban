@@ -1,7 +1,7 @@
 const express = require('express'); // import express from 'express'; (можно установить бабаель)
 const bodyParser = require('body-parser');
 const app = express()
-const PORT = 5000
+const PORT = process.env.PORT || 5000;
 
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }))
